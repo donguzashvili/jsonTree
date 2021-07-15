@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/jsonTree/static/css/main.63b8587b.chunk.css",
+    "main.js": "/jsonTree/static/js/main.fbec4a76.chunk.js",
+    "main.js.map": "/jsonTree/static/js/main.fbec4a76.chunk.js.map",
+    "runtime-main.js": "/jsonTree/static/js/runtime-main.d6f7c48e.js",
+    "runtime-main.js.map": "/jsonTree/static/js/runtime-main.d6f7c48e.js.map",
+    "static/js/2.f5b304d7.chunk.js": "/jsonTree/static/js/2.f5b304d7.chunk.js",
+    "static/js/2.f5b304d7.chunk.js.map": "/jsonTree/static/js/2.f5b304d7.chunk.js.map",
+    "static/js/3.14407992.chunk.js": "/jsonTree/static/js/3.14407992.chunk.js",
+    "static/js/3.14407992.chunk.js.map": "/jsonTree/static/js/3.14407992.chunk.js.map",
+    "index.html": "/jsonTree/index.html",
+    "static/css/main.63b8587b.chunk.css.map": "/jsonTree/static/css/main.63b8587b.chunk.css.map",
+    "static/js/2.f5b304d7.chunk.js.LICENSE.txt": "/jsonTree/static/js/2.f5b304d7.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/jsonTree/static/media/bpg_mrgvlovani_2009.d8afe6e5.ttf",
+    "static/media/logo.8992dd4a.png": "/jsonTree/static/media/logo.8992dd4a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d6f7c48e.js",
+    "static/js/2.f5b304d7.chunk.js",
+    "static/css/main.63b8587b.chunk.css",
+    "static/js/main.fbec4a76.chunk.js"
+  ]
+}
