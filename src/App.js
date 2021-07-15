@@ -87,6 +87,7 @@ export default class App extends React.Component {
     else if (this.state.gender === true) {
       for (let i = 0; i < data.length; i++) {
         if (data[i].gender.toLowerCase().includes(input.toLowerCase())) {
+          console.log(data[i].startsWith("a"));
           this.setState({ selectedStudent: data[i] });
         }
       }
@@ -95,7 +96,7 @@ export default class App extends React.Component {
     else {
       for (let i = 0; i < data.length; i++) {
         if (
-          data[i].gender.toLowerCase().includes(input.toLocaleLowerCase()) ||
+          data[i].gender.toLowerCase().includes(input.toLowerCase()) ||
           data[i].name.toLowerCase().includes(input.toLowerCase()) ||
           data[i].id.toLowerCase().includes(input.toLowerCase())
         ) {

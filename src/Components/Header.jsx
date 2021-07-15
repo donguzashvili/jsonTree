@@ -52,7 +52,6 @@ export default class Header extends React.Component {
           <form onInput={this.search}>
             <div className="search">
               <input id="search" type="text" placeholder="Search..." />
-              <button>Search</button>
             </div>
           </form>
 
