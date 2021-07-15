@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "mrgvlovani";
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "mrgvlovani";
+  src: url(./style/fonts/bpg_mrgvlovani_2009.ttf);
+}
