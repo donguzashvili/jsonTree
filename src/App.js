@@ -106,7 +106,7 @@ export default class App extends React.Component {
         for (let item in data[i]) {
           //if any of this element is equal to search input select this data and is not link
           if (
-            data[i][item].includes(this.state.search) !== false &&
+            data[i][item].includes(this.state.search.toLowerCase()) !== false &&
             !data[i][item].startsWith("http")
           ) {
             this.setState({ selectedStudent: data[i] });
@@ -121,7 +121,9 @@ export default class App extends React.Component {
 
                 if (
                   typeof data[i][item][j][key] !== "object" &&
-                  data[i][item][j][key].includes(this.state.search) !== false
+                  data[i][item][j][key].includes(
+                    this.state.search.toLowerCase()
+                  ) !== false
                 ) {
                   this.setState({ selectedStudent: data[i] });
                 } //if there was not what we were looking for and there is object
@@ -132,7 +134,7 @@ export default class App extends React.Component {
 
                     if (
                       data[i][item][j][key][last].includes(
-                        this.state.search
+                        this.state.search.toLowerCase()
                       ) !== false
                     ) {
                       this.setState({ selectedStudent: data[i] });
