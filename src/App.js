@@ -29,7 +29,7 @@ export default class App extends React.Component {
   //fetch data
   componentDidMount() {
     let api =
-      "https://my-json-server.typicode.com/Donguzashvili/FakeBack/course";
+      "https://my-json-server.typicode.com/donguzashvili/fakeback/course";
     fetch(api, {
       method: "GET",
       headers: {
