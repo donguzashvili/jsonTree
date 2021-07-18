@@ -64,12 +64,7 @@ export default class Header extends React.Component {
         <div className="options">
           <label htmlFor="id">
             <p>Search By ID</p>
-            <input
-              type="checkbox"
-              id="id"
-              defaultChecked
-              onChange={this.updateId}
-            />
+            <input type="checkbox" id="id" onChange={this.updateId} />
           </label>
           <label htmlFor="name">
             <p>Search By Name</p>
