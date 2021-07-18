@@ -9,7 +9,7 @@ export default class App extends React.Component {
     this.state = {
       student: null,
       search: "",
-      ID: true,
+      ID: false,
       name: false,
       gender: false,
       selectedStudent: "",
@@ -118,6 +118,7 @@ export default class App extends React.Component {
               //search in object
               for (let key in data[i][item][j]) {
                 //if any of this element type is not equal to object type and there is what we looking for search input select this data
+
                 if (
                   typeof data[i][item][j][key] !== "object" &&
                   data[i][item][j][key].includes(this.state.search) !== false
@@ -128,6 +129,7 @@ export default class App extends React.Component {
                   //open object
                   for (let last in data[i][item][j][key]) {
                     //if any of this element equal to search input selec tthis data
+
                     if (
                       data[i][item][j][key][last].includes(
                         this.state.search
@@ -146,16 +148,20 @@ export default class App extends React.Component {
   }
 
   searchResults() {
+    let id = this.state.ID;
+    let name = this.state.name;
+    let gender = this.state.gender;
+
     //check if id is checked
-    if (this.state.ID === true) {
+    if (id === true) {
       this.filterSearchByID();
     }
     //check if name is checked
-    else if (this.state.name === true) {
+    else if (name === true) {
       this.filterSearchByName();
     }
     //check if gender is checked
-    else if (this.state.gender === true) {
+    else if (gender === true) {
       this.filterSearchByGender();
     }
     //ignore checkbox
